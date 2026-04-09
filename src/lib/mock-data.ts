@@ -52,7 +52,7 @@ export const mockIssues: Issue[] = [
     comments: 12,
     reportedAt: "2026-04-03T09:14:00",
     reportedBy: "Citizen #4821",
-    imageUrl: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=800&q=80",
+    imageUrl: "/images/issues/indiranagar-pothole.png",
     timeline: [
       { status: "reported", label: "Reported", timestamp: "April 3, 2026 at 9:14 AM", completed: true },
       { status: "acknowledged", label: "Acknowledged", timestamp: "April 4, 2026 at 11:32 AM", department: "BBMP Roads Dept.", completed: true },
