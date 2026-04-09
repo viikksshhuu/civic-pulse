@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { MapPin, Navigation, ChevronRight, CheckCircle, Upload, ArrowLeft } from 'lucide-react';
-import { categories } from '@/lib/mock-data';
+import { categories, mockIssues } from '@/lib/mock-data';
 import Link from 'next/link';
 
 const STEPS = ['Location', 'Category & Details', 'Evidence', 'Contact'];
