@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, MapPin, Brain, Bell, Building, CheckCircle, Star, ChevronRight } from 'lucide-react';
 import IssueCard from '@/components/ui/IssueCard';
+import { SparklesCore } from '@/components/ui/sparkles';
 import { mockIssues, testimonials, categories, stats } from '@/lib/mock-data';
 
 /* ─────────────────────────────────────────
@@ -9,15 +10,21 @@ import { mockIssues, testimonials, categories, stats } from '@/lib/mock-data';
 function HeroSection() {
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-deep-navy">
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1596005554384-d293674c91d7?w=1600&q=80')`,
-        }}
-      />
+      {/* Sparkles Background */}
+      <div className="absolute inset-0 z-0">
+        <SparklesCore
+          id="tsparticles-hero"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={80}
+          className="w-full h-full"
+          particleColor="#1A4FD6"
+          speed={0.5}
+        />
+      </div>
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-deep-navy/95 via-deep-navy/80 to-deep-navy/30" />
+      <div className="absolute inset-0 bg-gradient-to-r from-deep-navy/95 via-deep-navy/80 to-deep-navy/30 z-5" />
 
       {/* Animated pulse rings */}
       <div className="absolute right-1/3 top-1/2 -translate-y-1/2 hidden lg:block pointer-events-none">
